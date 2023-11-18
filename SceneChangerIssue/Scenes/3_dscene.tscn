@@ -61,7 +61,6 @@ text = "DELTA
 "
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
-visible = false
 offset_left = 315.0
 offset_top = 152.0
 offset_right = 758.0
