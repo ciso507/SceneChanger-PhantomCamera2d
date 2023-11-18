@@ -1,5 +1,6 @@
 # SceneChanger-PhantomCamera2d
-Background loading and pCamera in action
+Background loading from Queble's tutorial and pCamera in action
+Using Kitkat assets from the godot Asset Library
 
 
 Hope this helps anyone..
