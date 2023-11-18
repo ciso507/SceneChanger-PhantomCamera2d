@@ -4,6 +4,6 @@ Using Kitkat assets from the godot Asset Library
 
 
 Hope this helps anyone..
-I managed to fix my game bug after testing a lot.
+I managed to fix my game bug after testing stuff on my game a lot.
 
 
