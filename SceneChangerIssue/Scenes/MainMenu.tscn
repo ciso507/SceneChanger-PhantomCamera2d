@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm5k0j7uhdf0o"]
+
+[ext_resource type="Script" path="res://Scenes/MainMenu.gd" id="1_rxwsf"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_6lltu"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd" id="3_8wder"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_rxwsf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(427, 277)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("2_6lltu")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ZetaScene" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 99.0
+offset_right = 47.0
+offset_bottom = 130.0
+text = "ZETA"
+
+[node name="DeltaScene" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 171.0
+offset_right = 56.0
+offset_bottom = 202.0
+text = "DELTA
+"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="PhantomCamera2D" type="Node2D" parent="Node"]
+position = Vector2(427, 277)
+script = ExtResource("3_8wder")
+
+[connection signal="pressed" from="Control/ZetaScene" to="." method="_on_zeta_scene_pressed"]
+[connection signal="pressed" from="Control/DeltaScene" to="." method="_on_delta_scene_pressed"]
