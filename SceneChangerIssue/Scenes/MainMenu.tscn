@@ -41,6 +41,23 @@ text = "DELTA
 [node name="PhantomCamera2D" type="Node2D" parent="Node"]
 position = Vector2(427, 277)
 script = ExtResource("3_8wder")
+priority_override = null
+priority = 0
+zoom = Vector2(1, 1)
+follow_mode = 0
+tween_parameters = null
+tween_on_load = true
+inactive_update_mode = 0
+
+[node name="PhantomCamera2D2" type="Node2D" parent="Node"]
+script = ExtResource("3_8wder")
+priority_override = null
+priority = 0
+zoom = Vector2(1, 1)
+follow_mode = 0
+tween_parameters = null
+tween_on_load = true
+inactive_update_mode = 0
 
 [connection signal="pressed" from="Control/ZetaScene" to="." method="_on_zeta_scene_pressed"]
 [connection signal="pressed" from="Control/DeltaScene" to="." method="_on_delta_scene_pressed"]

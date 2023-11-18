@@ -1,4 +1,4 @@
-#@tool
+@tool
 @icon("res://addons/phantom_camera/icons/PhantomCameraIcon2D.svg")
 class_name PhantomCamera2D
 extends Node2D

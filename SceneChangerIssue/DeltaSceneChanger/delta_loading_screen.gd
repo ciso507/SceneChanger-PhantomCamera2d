@@ -96,7 +96,7 @@ func _update_progress_bar(new_value:float)->void:
 
 func _start_outro_animation() ->void:
 	set_tween()
-	await Signal(animation_player, "animation_finished")
+#	await Signal(animation_player, "animation_finished")
 	animation_player.play("fade_out")
 	await Signal(animation_player, "animation_finished")
 	self.queue_free()
